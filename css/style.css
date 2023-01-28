@@ -1,0 +1,472 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+@font-face {
+    font-family: Ralleway;
+    src: url(../fonts/Raleway.ttf);
+}
+
+.main {
+    height: 622px;
+    border: 2px solid #000;
+    position: relative;
+    
+}
+.main-cards {
+    position: relative;
+    max-width: 1600px;
+    max-height: 317px;
+    margin: 153px auto;
+    min-width:fit-content;
+    min-height: fit-content;
+}
+.cards-titleblock {
+    margin-bottom: 68px;
+}
+.cards__title {
+    position: relative;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.cards__title::after {
+    content: "";
+    display: block;
+    width: 88px;
+    height: 4px;
+    background-color: #ffcc01;
+    margin-top: 8px;
+}
+.cards-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cards__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cards__content:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), rgba(121, 200, 0, 0.4);;
+}
+
+.cards__icon {
+    display: block;
+    width: 65%;
+    top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* =============================================== */
+.cards__text {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: Ralleway;
+    position: absolute;
+    bottom: 0;
+    max-height: 56px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+
+.bugs__item {
+    position: relative;
+    z-index: 2;
+}
+
+.cards__content {
+    border: 2px solid #79c800;
+    border-radius: 16px;
+    width: 376px;
+    height: 188px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+}
+
+
+.leaf__mini {
+    position: absolute;
+    width: 101px;
+    height: 97px;
+    top: 150px;
+    left: 275px;
+    z-index: -1;
+    transition: .5s;
+}
+
+/* =========================================== */
+.subst__text {
+    max-width: 190px;
+    
+}
+
+.decor__block {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.decor {
+    position: absolute;
+    top: 0px;
+    left: 65%;
+}
+
+.leaf {
+    position: absolute;
+    top: -100px;
+    left:-130px;
+    transition: 0.5s;
+}
+
+.circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.decor2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* 1810 */
+
+@media  (max-width:1810px) {
+    .main-cards {
+        max-width: 1400px;
+}
+    .cards__content {
+        width: 320px;
+    }
+    .leaf__mini {
+        width: 90px;
+        height: auto;
+        top: 155px;
+        left: 245px;
+
+    }
+    
+}
+
+/* 1620 */
+@media  (max-width:1620px) {
+    .main-cards {
+        max-width: 1200px;
+}
+    .cards__content {
+        width: 280px;
+        height: 165px;
+    }
+    .cards__text {
+        font-size: 20px;
+    }
+
+
+    .leaf__mini {
+        width: 90px;
+        height: auto;
+        top: 135px;
+        left: 200px;
+
+    }
+    
+    .decor {
+        width: 100px;
+        height: auto;
+
+    }
+    
+    .leaf {
+        top: -100px;
+        left:-130px;
+        width: 180px;
+        height: auto;
+    }
+    
+    .circle {
+        width: 315px;
+        height: auto;
+    }
+    
+    .decor2 {
+        width: 100px;
+        height: auto;
+    }
+}
+
+/* 1455 */
+
+@media  (max-width:1455px) {
+    .main-cards {
+        max-width: 1000px;
+}
+    .cards__content {
+        width: 220px;
+        height: 140px;
+    }
+    .cards__text {
+        font-size: 20px;
+    }
+
+    .cards__title {
+        font-size: 35px;
+
+    }
+
+    .cards__title::after {
+        width: 75px;
+        
+    }
+
+    .leaf__mini {
+        top: 110px;
+        left: 145px;
+    }
+}
+
+/* 1260 */
+@media  (max-width:1260px) {
+.main {
+    height: 500px;
+}
+
+    .main-cards {
+        max-width: 950px;
+}
+    .cards__content {
+        width: 210px;
+        height: 130px;
+    }
+    .cards__text {
+        font-size: 16px;
+        max-width: 40px;
+    }
+
+
+    .leaf__mini {
+        width: 70px;
+        height: auto;
+        top: 105px;
+        left: 145px;
+
+    }
+    
+    .decor {
+        width: 80px;
+        height: auto;
+        top: 0px;
+    }
+    
+    .leaf {
+        top: -70px;
+        left:-130px;
+        width: 160px;
+        height: auto;
+    }
+    
+    .circle {
+        width: 280px;
+        height: auto;
+    }
+    
+    .decor2 {
+        width: 80px;
+        height: auto;
+    }
+}
+
+
+/* 1190 */
+
+@media (max-width:1190px) {
+    .main {
+        height: 500px;
+    }
+    
+        .main-cards {
+            max-width: 750px;
+    }
+        .cards__content {
+            width: 170px;
+            height: 100px;
+        }
+        .cards__text {
+            font-size: 12px;
+            max-width: 40px;
+        }
+
+        .leaf__mini {
+            width: 70px;
+            height: auto;
+            top: 75px;
+            left: 110px;
+    
+        }
+    
+    }
+
+
+/* 1000 */
+    @media  (max-width:1000px) {
+        .main {
+            height: 400px;
+        }
+        
+            .main-cards {
+                max-width: 650px;
+        }
+            .cards__content {
+                width: 150px;
+                height: 75px;
+            }
+            .cards__text {
+                font-size: 10px;
+                max-width: 40px;
+                max-height: 10px;
+            }
+            .cards-titleblock {
+                margin-bottom: 55px;
+            }
+            .cards__title {
+                font-size: 25px;
+            }
+        
+        
+            .leaf__mini {
+                position: absolute;
+                width: 40px;
+                height: auto;
+                top: 60px;
+                right: 0px;
+                z-index: -1;
+                transition: .5s;
+            }
+            
+            .decor {
+                position: absolute;
+                width: 80px;
+                height: auto;
+                top: 0px;
+                left: 65%;
+            }
+            
+            .leaf {
+                position: absolute;
+                top: -57px;
+                left:-72px;
+                width: 120px;
+                height: auto;
+                transition: 0.5s;
+            }
+            
+            .circle {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 280px;
+                height: auto;
+            }
+            
+            .decor2 {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 80px;
+                height: auto;
+            }
+        }
+
+        @media  (max-width:750px) {
+            .main {
+                height: auto;
+            }
+            
+                .main-cards {
+                    max-width: 300px;
+                    height: 600px;
+                    
+            }
+
+            .cards-items{
+                flex-direction: column;
+                height: 350px;
+            }
+                .cards__content {
+                    width: 150px;
+                    height: 75px;
+                }
+                .cards__text {
+                    font-size: 10px;
+                    max-width: 40px;
+                    max-height: 10px;
+                }
+                .cards-titleblock {
+                    margin-bottom: 55px;
+                }
+                .cards__title {
+                    font-size: 25px;
+                }
+            
+            
+                .leaf__mini {
+                    position: absolute;
+                    width: 40px;
+                    height: auto;
+                    top: 60px;
+                    right: 0px;
+                    z-index: -1;
+                    transition: .5s;
+                }
+                
+                .decor {
+                    position: absolute;
+                    width: 80px;
+                    height: auto;
+                    top: 0px;
+                    left: 65%;
+                }
+                
+                .leaf {
+                    position: absolute;
+                    top: -57px;
+                    left:-72px;
+                    width: 120px;
+                    height: auto;
+                    transition: 0.5s;
+                }
+                
+                .circle {
+                    position: absolute;
+                    top: 225px;
+                    right: 0px;
+                    width: 200px;
+                    height: auto;
+                }
+                
+                .decor2 {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 80px;
+                    height: auto;
+                }
+            }
+
